@@ -7,15 +7,37 @@
       background-image: url("https://www.itl.cat/pngfile/big/262-2624211_cat-in-the-background.jpg");
       background-size: cover;
     }
-    
-    .center {
-       margin: 0;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       -ms-transform: translate(-50%, -50%);
-       transform: translate(-50%, -50%);
-    }
+   
+    .button {
+       display: inline-block;
+       padding: 15px 25px;
+       font-size: 24px;
+       cursor: pointer;
+       text-align: center;
+       text-decoration: none;
+       outline: none;
+       color: #fff;
+       background-color: #4CAF50;
+       border: none;
+       border-radius: 15px;
+       box-shadow: 0 9px #999;
+     }
+
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+       }
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+       }
     
   </style>
   
@@ -24,9 +46,7 @@
 <body>
   <div class="container">
     <div class="center">
-      <button>
-       <img src="https://cdn.pixabay.com/photo/2015/05/11/19/45/cat-762999_1280.png" alt="Cat Button">
-      </button>
+      <button class="button">Click For Cat</button>
     </div>
   </div>
 </body>
